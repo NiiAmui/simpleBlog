@@ -16,12 +16,39 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+.testr {
+  border: 1px solid red;
+}
+
+.text-danger {
+  color: red;
+}
+.bg-primary {
+  background: #3870ff;
+}
+.text-primary {
+  color: #3870ff;
+}
+
+.rightContainer {
+  width: 60%;
+  /* background-color: #09468b; */
+}
+
+.rightContainer .glassCard {
+  width: 641px;
+  height: 287px;
+  left: 929px;
+  top: 460px;
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      180deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.15) 56.25%
+    );
+  backdrop-filter: blur(3.5px);
 }
